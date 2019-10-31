@@ -9,7 +9,9 @@
 }
 
 .min-height {
+    min-height: 100vh;
     height: 100vh;
+    max-height: 100vh;
     background-image: url(../images/Bridges.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -49,7 +51,7 @@
     margin-bottom: 60px;
 }
 
-.hero > clock {
+.hero > .clock {
     display: inline-block;
     width: 100%;
     margin-bottom: 60px;
