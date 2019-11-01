@@ -10,14 +10,14 @@
         font-size: 16px;
         line-height: 20px;
     }
-    .progress-bar > .texts > .label {
-        display: inline-block;
-        float: left;
-    }
-    .progress-bar > .texts > .value {
-        display: inline-block;
-        float: right;
-    }
+        .progress-bar > .texts > .label {
+            display: inline-block;
+            float: left;
+        }
+        .progress-bar > .texts > .value {
+            display: inline-block;
+            float: right;
+        }
     .progress-bar > .full {
         display: inline-block;
         width: 100%;
@@ -30,22 +30,22 @@
             display: inline-block;
             width: 90%;
             height: 100%;
-            background-color: #6FB2F8;
-            float: left;
-            animation: loading 3s 1 ;
         }
-        .progress-bar > .full > .bar-86 {
-            width: 86%;
-        }
-        .progress-bar > .full > .bar-50 {
-            width: 50%;
-        }
+            .progress-bar > .full > .bar > .loading {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-color: #6FB2F8;
+                animation-name: loading;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
 
-        @keyframes loading {
-            0% {
-                width: 0%;
-            }
-            100% {
-                width: 90%;
-            }
-        }
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
